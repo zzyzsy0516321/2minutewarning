@@ -9,14 +9,16 @@
 import Foundation
 
 class ScheduleModel {
-    
+
     var scheduleName: String
-    var period: String
-    var time: String
-    
-    init(scheduleName:String, period: String, time: String) {
+    var currentSchedule: [Int: DateComponents]
+
+    init(scheduleName: String, schedule: [Int: DateComponents]) {
         self.scheduleName = scheduleName
-        self.period = period
-        self.time = time
+        currentSchedule = schedule
     }
+    
+    
+
+
 }
